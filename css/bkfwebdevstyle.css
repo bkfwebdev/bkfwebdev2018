@@ -7,9 +7,9 @@
 
 #bio{
  text-align: left;
- grid-column-start:2;
+ grid-column-start:1;
  grid-column-end:3;
- grid-row-start:1;
+ grid-row-start:2;
  grid-row-end:2;
  font-family:philosopher;
  color:#ffffa4
@@ -20,15 +20,15 @@
 #projectportfolio {
   grid-column-start: 4;
   grid-column-end: 5;
-  grid-row-start: 2;
+  grid-row-start: 1;
   grid-row-end: 4;
   background-color: midnightblue;
   color:#ffffa4;
 }
 
 #skillset {
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
     grid-column-start:1;
     grid-column-end: 4
 
@@ -45,13 +45,13 @@
 }
 
 #logo {
-  grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
   font-family: 'Righteous', cursive;
   border-left: 2px solid black;
-  background-image: url(../images/webdevhammer.jpg);
+  background-image: url(../images/webtools.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -65,12 +65,6 @@
   color:#ffffa4
 }
 
-#contactinfo {
-margin-left:10%;
-margin-right:10%;
-font-family: 'Philosopher', sans-serif;
-color:#ffffa4
-}
 
 body {
   background-color: orangered
@@ -83,7 +77,7 @@ body {
   grid-column-start:1;
   grid-column-end:2;
   border: solid 2px #F0EAD6;
-  height:325px;
+  height:330px;
   width: 250px
 }
 
@@ -98,10 +92,11 @@ color:#ffffa4
 }
 
 #fsjs {
-  grid-row-start:3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3
   grid-row-end:4;
-  grid-column-start:1;
-  grid-column-end:2;
   font-family: 'Song Myung', serif;
   color:#ffffa4
 }
+

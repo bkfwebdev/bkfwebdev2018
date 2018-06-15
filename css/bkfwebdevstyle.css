@@ -1,4 +1,69 @@
-#container {
+#container {display : grid;
+  grid:
+  "logo logo logo logo"
+  "logo logo logo logo"
+  "logo logo logo logo"
+  "bio       bio       bio  bio"
+  "bio       bio       bio  bio"
+  "skills    skills    skills skills"
+  "skills    skills    skills skills"
+  "followme  followme  portfolio portfolio"
+  "comeout   comeout   portfolio portfolio";
+  }
+  
+  #bio{grid-area:bio;
+      font-family:philosopher;
+      color:#ffffa4}
+
+   #projectportfolio {grid-area: portfolio;
+                      background-color: midnightblue;
+                      color:#ffffa4;}
+
+   #skillset {grid-area: skills} 
+
+   #logo {grid-area:logo;
+    font-family: 'Righteous', cursive;
+    border: 2px solid black;
+    background-image: url(../images/webdevhammer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:#F0EAD6}
+
+   #thinkingb {grid-area: mypicture}
+
+   #followme {grid-area: followme}
+
+   #fsjs {grid-area: comeout}
+
+   #skillset h2 {
+    font-family: 'Song Myung', serif;
+      color:#ffffa4
+  }
+  
+  .skillsimage {
+    height:36%;
+    width: 16%
+  }
+
+  body {
+    background-color: orangered
+  }
+
+
+  #logo p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 90px;
+    color:#ffffa4
+  }
+
+}
+
+
+
+
+/* #container {
   display:grid;
   grid-template-columns: 20% 30% 25% 25%;
   grid-template-rows: 20% 5% 10% 20% 45%
@@ -75,11 +140,12 @@ body {
   grid-row-start: 1;
   grid-row-end:2;
   grid-column-start:1;
-  grid-column-end:2;
+  grid-column-end:1;
   border: solid 2px #F0EAD6;
-  height:330px;
-  width: 250px
+  height:auto; 
+  width:auto
 }
+
 
 #followme {
 grid-column-start: 2;
@@ -100,3 +166,32 @@ color:#ffffa4
   color:#ffffa4
 }
 
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait) {
+    #container {display : grid;
+    grid:
+    "logo logo"
+    "logo logo"
+    "mypicture mypicture"
+    "mypicture mypicture"
+    "bio portfolio"
+    "bio portfolio"
+    "myskills portfolio"
+    "myskills portfolio"
+    "followme  portfolio"
+    "comeonout portfolio";
+    }
+    #bio{grid-area:bio}
+     #projectportfolio {grid-area: portfolio}
+     #skillset {grid-area: myskills} 
+     #logo {grid-area:logo}
+     #thinkingb {grid-area: mypicture}
+     #followme {grid-area: followme}
+     #fsjs {grid-area: comeonout}
+}
+
+*/

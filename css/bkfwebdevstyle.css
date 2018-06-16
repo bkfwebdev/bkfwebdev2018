@@ -23,7 +23,7 @@
 
    #logo {grid-area:logo;
     font-family: 'Righteous', cursive;
-    border: 2px solid black;
+    border : 2px solid black;
     background-image: url(../images/webdevhammer.jpg);
     background-repeat: no-repeat;
     background-position: center;
